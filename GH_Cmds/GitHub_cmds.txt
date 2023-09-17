@@ -1,0 +1,71 @@
+					GITHUB COMMANDS
+----------------------------------------------------------------------------------------------------------------------
+Working Directory -> Local -> Remote
+
+pwd							Prints Working Directory
+mkdir							Make Working Directory
+cd							Change Directory
+git init (only one time)				Initialize Git in the working directory
+ls -a							list all the files (-a -> for all  the hidden files)
+git config --global user.name				Setup your name
+git config --global user.email				Setup your email
+touch file_name.txt	-> Windows			create a file using terminal
+gedit file_name.txt	-> Linux			
+git add file_name	-> for single file		move file from working directory to staging area
+git add .		-> for multiple files		
+git commit –m “message”					staging area to local repository
+git remote add origin <URL> (only one time)		connect local repository to GITHUB
+git push origin master (first time)			push local repo to remote repo
+git push (after first time)				
+----------------------------------------------------------------------------------------------------------------------
+Remote -> Local/Working Directory (Clone any Repository to you local)
+
+git clone <URL>						copying an existing GIT repository
+----------------------------------------------------------------------------------------------------------------------
+Git Pull
+
+git pull origin branch_name				used to fetch and download content from a remote repository and 
+							immediately update the local repository to match that content
+----------------------------------------------------------------------------------------------------------------------
+Creating a new branch -> Remote Directory
+
+git branch						shows all the branch
+git branch new_branch					create a new_branch
+git checkout new_branch
+(create a new file -> add -> commit)			switch to new_branch
+git push -u origin new_branch
+(better to use “-u flag”)				push local repo to remote repo
+----------------------------------------------------------------------------------------------------------------------
+Merge new branch to master branch
+
+git checkout master					switch to master
+git merge new_branch					merge new_branch to master in local repo
+git push –u origin master				push local repo to remote repo
+----------------------------------------------------------------------------------------------------------------------
+Delete a branch
+
+git branch -d new_branch				delete from local repo
+git branch origin --delete new_branch			delete from remote repo
+----------------------------------------------------------------------------------------------------------------------
+Remove Commands
+
+git rm --cached file_name				remove  a file from local repo
+rm file_name						remove a file from the system
+rm –rf .git						remove .git folder from local repo
+----------------------------------------------------------------------------------------------------------------------
+.gitignore -> Ignoring files
+
+Files -> hello.txt , hii.txt , bye.txt			gitignore file tells the GIT which files to ignore when commiting your project to GitHuh repo
+Directory -> arin
+
+-> touch .gitignore
+
+Write these things in .gitignore file.
+hello.txt	-> to ignore a single file
+*.txt		-> to ignore all files (txt)
+dir/		-> to ignore the directory	
+----------------------------------------------------------------------------------------------------------------------
+Some other imp commands
+git status						compare working directory and staging area
+git diff						compare last commit with current staging area
+----------------------------------------------------------------------------------------------------------------------

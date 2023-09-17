@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and lists</title>
+</head>
+
+<body>
+    <!-- Lists -->
+
+    <ul type="circle"> <!-- type = "disc or square or circle" -->
+        <li>This is first item of my unordered list.</li>
+        <li>This is second item of my unordered list.</li>
+        <ul>
+            <li>Hello 1</li>
+            <li>Hello 2</li>
+            <li>Hello 3</li>
+        </ul>
+        <li>This is third item of my unordered list.</li>
+        <li>This is fourth item of my unordered list.</li>
+    </ul>
+    <ol type="I">
+        <li>This is first item of my ordered list.</li>
+        <li>This is second item of my ordered list.</li>
+        <li>This is third item of my ordered list.</li>
+        <li>This is fourth item of my ordered list.</li>
+    </ol>
+
+    <!-- Tables -->
+
+    <h3>HTML Table</h3>
+    <table bgcolor="grey" border="5">
+        <caption>Personal Information</caption>
+        <thead bgcolor="lightgrey">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Employee Id</th> <!-- colspan :- Becomes a heading of 2 columns -->
+
+                <!-- <th>Employee role</th> -->
+            </tr>
+        </thead>
+        <tbody align="left">
+            <tr>
+                <td>Arin Jain</td>
+                <td>1001</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>Harbhajan Mishra</td>
+                <td>1002</td>
+                <td>Web Developer</td>
+            </tr>
+            <tr>
+                <td>Hussain Rokeriya</td>
+                <td>1003</td>
+                <td>Android Developer</td>
+            </tr>
+            <tr>
+                <td>Ayush Aherwar</td>
+                <td>1004</td>
+                <td>Full Stack Developer</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

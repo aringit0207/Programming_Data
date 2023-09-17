@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 3px solid red;
+            background-color: rgb(159, 195, 183);
+            margin: 20px auto;
+            padding: 20px;
+            width: 800px;
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: rgb(203, 125, 203);
+            padding: 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            background-color: rgb(176, 111, 111);
+        }
+
+        a:active {
+            background-color: blueviolet;
+        }
+
+        .btn:hover {
+            color: rgb(126, 141, 136);
+            background-color: rgb(244, 219, 179);
+            border: 2px solid rgb(45, 42, 42);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam omnis ducimus culpa sed fugit
+            maiores necessitatibus autem vero nostrum dolor a, libero aut accusamus modi impedit unde iusto cumque ess
+            fuga magni quod!</p>
+        <a href="https://www.codewithharry.com/" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+
+</html>
