@@ -15,6 +15,7 @@ git add file_name	-> for single file		move file from working directory to stagin
 git add .		-> for multiple files		
 git commit –m “message”					staging area to local repository
 git remote add origin <URL> (only one time)		connect local repository to GITHUB
+(here origin is the name of remote)
 git push origin master (first time)			push local repo to remote repo
 git push (after first time)				
 ----------------------------------------------------------------------------------------------------------------------
@@ -64,6 +65,14 @@ Write these things in .gitignore file.
 hello.txt	-> to ignore a single file
 *.txt		-> to ignore all files (txt)
 dir/		-> to ignore the directory	
+----------------------------------------------------------------------------------------------------------------------
+Sync local/fork repo to original repo
+
+git remote -v						shows all the remotes
+git remote add parent <URL> (of parent repo)		add parent's remote to your local
+(here parent is the name of remote)
+git pull parent master					pull all the new changes from parent to your local
+git push parent master					push all the new changes from local to your fork repo
 ----------------------------------------------------------------------------------------------------------------------
 Some other imp commands
 git status						compare working directory and staging area
